@@ -27,6 +27,7 @@ link /out:test.exe test.obj hmarlog.obj
 ```console
 gcc -c -o hmarlog.o 
 gcc -o test<.exe> test.o hmarlog.o
+```
 
 ## license
 
