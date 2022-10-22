@@ -6,7 +6,7 @@ int main()
 	logerr("Hello, World!", "test.results");
 	logwarn("Hello, World!", "test.results");
 	loginf("Hello, World!", "test.results");
-	logfatal("Hello, World!", "test.results", false);
+	logfatal("Hello, World!", "test.results", 1);
 	logver("test program v1", "test.results");
 	
 	return 0;

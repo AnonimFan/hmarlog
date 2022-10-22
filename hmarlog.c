@@ -49,12 +49,12 @@ int logver(const char *appver, const char *logfile)
 }
 
 // logfatal: logs a fatal error
-int logfatal(const char *err, const char *logfile, bool shexit) 
+int logfatal(const char *err, const char *logfile, int shexit) 
 {
 	FILE *logfile1 = fopen(logfile, "a");
-	fprintf(logfile1, "[FATAL]: %s\n", inf);
+	fprintf(logfile1, "[FATAL]: %s\n", err);
 	fclose(logfile1);
-	if (shexit == true) {
+	if (shexit == 1) {
 		exit(1);
 	}
 	return 0;
